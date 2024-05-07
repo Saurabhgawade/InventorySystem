@@ -1,0 +1,80 @@
+﻿ @model RegisterUser
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@* <h1>Register YourSelf</h1>
+<form method="post">
+    <label for="email">Email Id</label>
+    <input asp-for="Email" id="email"  type="Email"  class="form-control" />
+    <span asp-validation-for="Email" class="text-danger"></span>
+
+    <label for="pass">Password</label>
+    <input asp-for="Password" id="pass" type="password" class="form-control" />
+    <span asp-validation-for="Password" class="text-danger"></span>
+
+    <label for="cpass">Confirm Password</label>
+    <input asp-for="ConfirmPassword" id="cpass" type="password" class="form-control" />
+    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+
+    <button class="btn btn-primary">Register</button>
+</form>  *@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        /* Add CSS styles for form layout, alignment, and styling */
+        /* Example styles */
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+            input[type="submit"] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+                input[type="submit"]:hover {
+                    background-color: #45a049;
+                }
+    </style>
+</head>
+<body>
+
+    <h2>User Registration</h2>
+    <form method="POST">
+        
+
+        <label for="email">Email:</label>
+        <input asp-for="Email" type="email" id="email">
+        <span asp-validation-for="Email" class="text-danger"></span>
+
+        <label for="password">Password:</label>
+        <input asp-for="Password" type="password" id="password" minlength="8">
+        <small>Password must be at least 8 characters long.</small>
+        <span asp-validation-for="Password" class="text-danger"></span>
+
+        <label for="confirm_password">Confirm Password:</label>
+        <input asp-for="ConfirmPassword" type="password" id="confirm_password">
+        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+        
+        <button class="btn btn-primary">Register</button>
+    </form>
+
+</body>
+</html>
