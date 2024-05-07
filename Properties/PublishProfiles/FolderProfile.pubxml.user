@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Hosting\inventaryHosting</_PublishTargetUrl>
+    <History>True|2024-04-28T07:38:00.3139889Z;True|2024-04-28T13:06:04.6001006+05:30;True|2024-04-28T12:58:14.7327210+05:30;True|2024-04-28T10:37:03.4749697+05:30;True|2024-04-28T10:27:36.2490598+05:30;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="projectDemoContext">
+      <Value>Server=%28localdb%29\mssqllocaldb%3bDatabase=projectDemoContext-4d012be3-6e37-46db-8434-b9ffb7394585%3bIntegrated Security=SSPI%3bMultipleActiveResultSets=true</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="projectDemo.Data.projectDemoContext">
+      <Value>Server=%28localdb%29\mssqllocaldb%3bDatabase=projectDemoContext-4d012be3-6e37-46db-8434-b9ffb7394585%3bIntegrated Security=SSPI%3bMultipleActiveResultSets=true</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
